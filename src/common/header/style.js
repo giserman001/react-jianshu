@@ -7,15 +7,26 @@ export const HeaderWrapper = styled.div`
   height: 58px;
   border-bottom: 1px solid #f0f0f0;
 `
-export const Logo = styled.a.attrs({
-  href: '/'
-})`
+// export const Logo = styled.a.attrs({
+//   href: '/'
+// })`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 56px;
+//   width: 100px;
+//   display:block;
+//   background: url('${ logoPic }');
+//   background-size: contain;
+// `
+
+export const Logo = styled.div`
   position: absolute;
   top: 0;
   left: 0;
   height: 56px;
   width: 100px;
-  display:block;
+  // display:block;
   background: url('${ logoPic }');
   background-size: contain;
 `
@@ -82,6 +93,7 @@ export const SearchInfo = styled.div`
   width:240px;
   padding:0 20px;
   box-shadow: 0 0 8px rgba( 0, 0, 0, .2);
+  background:#fff;
 `
 export const SearchInfoTitle = styled.div`
   margin-top:20px;
@@ -94,6 +106,16 @@ export const SearchInfoSwitch = styled.span`
   float:right;
   font-size:13px;
   cursor:pointer;
+  .spin {
+    font-size: 12px;
+    display:block;
+    float: left;
+    margin-right:4px;
+    transition: all .2s ease-in;
+    transform: rotate(0deg);
+    // 设置旋转中心
+    transform-origin: center center;
+  }
 `
 export const SearchInfoItem = styled.a`
   font-size:12px;
@@ -120,12 +142,12 @@ export const Addition = styled.div`
 export const Button = styled.div`
   float:right;
   cursor:pointer;
-  line-height:38px;
+  line-height:35px;
   border-radius:19px;
   margin-top:9px;
   border:1px solid #ec6149;
   margin-right:20px;
-  padding: 0 20px;
+  padding: 0 18px;
   font-size:14px;;
   &.reg {
     color:#ec6149;
@@ -138,7 +160,7 @@ export const Button = styled.div`
 export const SearchWrapper = styled.div`
   float:left;
   position:relative;
-  .iconfont {
+  .iconfont.zoom {
     position:absolute;
     right:5px;
     width:30px;
