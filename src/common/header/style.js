@@ -91,6 +91,7 @@ export const SearchInfo = styled.div`
   top:56px;
   left:20px;
   width:240px;
+  z-index:1;
   padding:0 20px;
   box-shadow: 0 0 8px rgba( 0, 0, 0, .2);
   background:#fff;
