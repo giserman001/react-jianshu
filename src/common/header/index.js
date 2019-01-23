@@ -1,10 +1,8 @@
 import React, { Component, Fragment } from 'react'
 import { CSSTransition } from 'react-transition-group'
 import { connect } from 'react-redux'
-import { Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { actionCreators } from './store'
-import Home from '../../pages/home'
-import Detail from '../../pages/detail'
 import {
   HeaderWrapper,
   Logo,
@@ -57,12 +55,6 @@ class Header extends Component {
             <Button className='reg'>注册</Button>
           </Addition>
         </HeaderWrapper>
-        <div>
-          {/* <Route path='/' exact render={() => <div>首页</div>}></Route>
-              <Route path='/detail' exact render={() => <div>detail</div>}></Route> */}
-          <Route path='/home' exact component={Home}></Route>
-          <Route path='/detail/:id' exact component={Detail}></Route>
-        </div>
       </Fragment>
     )
   }
