@@ -57,7 +57,6 @@ const mapDispatchToProps = (dispatch) => {
     },
     changeScollTopShow () {
       // document.documentElement.scrollTop 要获取当前页面的滚动条纵坐标位置
-      console.log(document.documentElement.scrollTop)
       if (document.documentElement.scrollTop > 100) {
         dispatch(actionCreators.toggleTopShow(true))
       } else {
